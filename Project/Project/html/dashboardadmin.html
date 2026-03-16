@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Weka Hotel</title>
+    <link rel="stylesheet" href="../css/dasboardadmin.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h1>Admin Weka Hotel</h1>
+            <nav>
+                <ul>
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#manage-rooms">Manage Rooms</a></li>
+                    <li><a href="#manage-restaurant">Manage Restaurant</a></li>
+                    <li><a href="#manage-bar">Manage Bar</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <a href="#logout"><img src="../img/user.png" alt="Logout" class="user-icon"></a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <section id="dashboard" class="dashboard">
+                <h2>Dashboard</h2>
+                <p>Welcome to the admin panel. Here you can manage all aspects of the hotel.</p>
+            </section>
+
+            <section id="manage-rooms">
+                <h2>Manage Rooms</h2>
+                <div class="room-list">
+                    <div class="room">
+                        <h3>Regular Room</h3>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </div>
+                    <div class="room">
+                        <h3>VIP Room</h3>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </div>
+                    <div class="room">
+                        <h3>Executive Room</h3>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </div>
+                </div>
+                <button>Add New Room</button>
+            </section>
+
+            <section id="manage-restaurant">
+                <h2>Manage Restaurant</h2>
+                <div class="restaurant-item">
+                    <h3>Restaurant Menu</h3>
+                    <button>Edit Menu</button>
+                    <button>View Reservations</button>
+                </div>
+            </section>
+
+            <section id="manage-bar">
+                <h2>Manage Bar</h2>
+                <div class="bar-item">
+                    <h3>Bar Menu</h3>
+                    <button>Edit Menu</button>
+                    <button>View Reservations</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer id="contact">
+        <h3>Contact Us</h3>
+        <p>Email: admin@wekahotel.com | Phone: +62123456789</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

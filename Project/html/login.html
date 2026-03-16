@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login-Weka Hotel</title>
+        <link rel="stylesheet" href="../css/login.css">
+    </head>
+    <body>
+        <div class="login-container">
+            <h1>Login User</h1>
+            <?php if (isset($_GET['error']) && $_GET['error'] == 'not_logged_in') : ?>
+                <p class="error-message">Sesi login tidak ditemukan! Silakan login terlebih dahulu.</p>
+            <?php endif; ?>
+            <form action="../php/login.php" method="POST">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+                <p class="message">Belum punya akun? <a href="signup.html">Sign Up</a></p>
+            </form>
+        </div>
+    </body>
+</html>

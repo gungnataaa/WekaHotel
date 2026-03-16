@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Room - Weka Hotel</title>
+  <link rel="stylesheet" href="../css/halamanpemesanan.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h1>Weka Hotel</h1>
+      <nav>
+        <ul>
+          <li><a href="../html/dashboarduser.html#home">Home</a></li>
+          <li><a href="../html/confirmation.html">Confirmation</a></li>
+          <li><a href="../html/dashboarduser.html#rooms">Rooms</a></li>
+          <li><a href="../html/dashboarduser.html#restaurant-bar">Resto & Bar</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="#account"><img src="../img/user.png" alt="Akun" class="user-icon"></a>
+          </li> 
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="booking-section">
+      <h2>Pesan Kamar Anda</h2>
+      <p>Pilih kamar yang sesuai dengan kebutuhan Anda dan lihat detail fasilitasnya.</p>
+
+      <!-- Regular Room -->
+      <div class="room-card">
+        <h3>Regular Room</h3>
+        <img src="../img/Reguler.jpg" alt="Regular Room">
+        <ul>
+          <li>Sarapan gratis</li>
+          <li>WiFi kecepatan tinggi</li>
+          <li>1 tempat tidur ukuran queen</li>
+          <li>Kamar mandi pribadi</li>
+        </ul>
+        <p>Harga: 1jt/night</p>
+      </div>
+
+      <!-- VIP Room -->
+      <div class="room-card">
+        <h3>VIP Room</h3>
+        <img src="../img/VIP.JPG" alt="VIP Room">
+        <ul>
+          <li>Sarapan gratis</li>
+          <li>WiFi premium</li>
+          <li>1 tempat tidur ukuran king</li>
+          <li>Pemandangan laut</li>
+          <li>Akses lounge VIP</li>
+        </ul>
+        <p>Harga: 2jt/night</p>
+      </div>
+
+      <!-- Executive Room -->
+      <div class="room-card">
+        <h3>Executive Room</h3>
+        <img src="../img/Executive.jpg" alt="Executive Room">
+        <ul>
+          <li>Sarapan eksklusif</li>
+          <li>WiFi premium</li>
+          <li>2 tempat tidur ukuran king</li>
+          <li>Pemandangan kota</li>
+          <li>Layanan butler pribadi</li>
+          <li>Akses gym & spa</li>
+        </ul>
+        <p>Harga: 3jt/night</p>
+      </div>
+    </section>
+
+    <section class="booking-form">
+      <h2>Pesan Kamar Anda</h2>
+      <p>Isi detail di bawah ini untuk melanjutkan pemesanan.</p>
+
+      <form action="confirmation.html" method="POST" id="bookingForm">
+        <!-- Pilihan Kamar -->
+        <label for="roomType">Jenis Kamar:</label>
+        <select id="roomType" name="roomType" required>
+          <option value="Regular">Regular Room - 1jt/night</option>
+          <option value="VIP">VIP Room - 2jt/night</option>
+          <option value="Executive">Executive Room - 3jt/night</option>
+        </select>
+
+        <!-- Nama Lengkap -->
+        <label for="fullName">Nama Lengkap:</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Masukkan nama Anda" required>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+
+        <!-- Nomor Telepon -->
+        <label for="phone">Nomor Telepon:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon Anda" required>
+
+        <!-- Tanggal Check-In -->
+        <label for="checkIn">Tanggal Check-In:</label>
+        <input type="date" id="checkIn" name="checkIn" required>
+
+        <!-- Tanggal Check-Out -->
+        <label for="checkOut">Tanggal Check-Out:</label>
+        <input type="date" id="checkOut" name="checkOut" required>
+
+        <!-- Permintaan Khusus -->
+        <label for="specialRequest">Permintaan Khusus (Opsional):</label>
+        <textarea id="specialRequest" name="specialRequest" rows="4" placeholder="Tulis permintaan khusus Anda di sini"></textarea>
+
+        <!-- Tombol Kirim -->
+        <button type="submit" class="btn-submit">Pesan Sekarang</button>
+      </form>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-container">
+      <div class="footer-section address">
+        <h4>Address</h4>
+        <p>Jalan Warurenggong, <br> Denpasar, Bali</p>
+        <a href="#">Get Direction</a>
+      </div>
+      <div class="footer-section reservation">
+        <h4>Reservation</h4>
+        <p>+62 367 267 2678</p>
+        <p><a href="mailto:reservation@wekahotel.com">reservation@wekahotel.com</a></p>
+      </div>
+      <div class="footer-section navigation">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="../html/dashboarduser.html#home">Home</a></li>
+          <li><a href="../html/confirmation.html">Confirmation</a></li>
+          <li><a href="../html/dashboarduser.html#rooms">Rooms</a></li>
+          <li><a href="../html/dashboarduser.html#restaurant-bar">Resto & Bar</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="#account"><img src="../img/user.png" alt="Akun" class="user-icon"></a>
+          </li> 
+        </ul>
+      </div>
+    <div class="footer-bottom">
+      <p>Copyright ©2024 by <a href="#">Hotel Weka</a></p>
+    </div>
+  </footer>
+</body>
+</html>

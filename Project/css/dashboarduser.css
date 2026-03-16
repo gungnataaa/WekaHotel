@@ -1,0 +1,173 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+.hero {
+  background: url('../img/hotel.jpg') no-repeat center center; /* Ganti dengan gambar latar belakang yang diinginkan */
+  background-size: cover; /* Mengatur gambar agar menutupi seluruh area */
+  height: 100vh; /* Mengatur tinggi hero sesuai tinggi layar */
+  text-align: center; /* Menyelaraskan teks di tengah */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Mengatur warna teks */
+  }
+.hero h2 {
+  font-size: 3em; /* Ukuran font untuk judul */
+  margin: 0; /* Menghilangkan margin default */
+  margin-bottom: 10px; /* Menambahkan margin bawah */
+}
+.hero p {
+  font-size: 1.5em; /* Ukuran font untuk paragraf */
+  max-width: 50%; /* Lebar maksimum 50% */
+  margin: 10px auto; /* Memusatkan paragraf secara horizontal */
+  margin-bottom: 20px;
+}
+.hero .btn {
+  background: #f4a226; /* Warna latar belakang tombol */
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 25px;
+  }
+section {
+  padding: 50px;
+  }
+.room-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  }
+ 
+.room {
+  background-color: #f9f9f9; 
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 40px;
+  padding: 15px;
+  text-align: center;
+  width: 300px; /* Atur lebar sesuai kebutuhan */
+  transition: transform 0.3s;
+  }
+#rooms h2, #restaurant-bar h2 {
+  text-align: center; /* Menyelaraskan teks di tengah */
+  margin: 0; /* Menghilangkan margin default */
+  font-size: 2em;
+  }
+#rooms p, #restaurant-bar p {
+  text-align: center; /* Menyelaraskan teks di tengah */
+  margin: 0; /* Menghilangkan margin default */
+  }
+.room img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  }    
+.room h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+  }    
+.room p {
+  font-size: 1.2em;
+  color: #333;
+  }    
+.btn-room {
+  background-color: #f4a226;
+  color: white; /* Warna teks putih */
+  border: none; /* Tanpa border */
+  padding: 10px 20px; /* Padding atas-bawah 10px, kiri-kanan 20px */
+  text-align: center; /* Teks di tengah */
+  text-decoration: none; /* Tanpa garis bawah */
+  display: inline-block; /* Agar button bisa disusun secara inline */
+  font-size: 16px; /* Ukuran font */
+  margin-top: 10px;
+  border-radius: 25px; /* Sudut membulat */
+
+  }     
+.room:hover {
+  transform: scale(1.05);
+  }
+  
+/* --- Section Styling --- */
+.restaurant-bar-section {
+  background-color: #ffffff;
+  text-align: center;  
+  }
+/* --- Container Layout --- */
+.restaurant-bar-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  padding-top: 40px;
+  }
+/* --- Common Item Styling --- */
+.restaurant-item,
+.bar-item {
+  flex: 1 ;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  }
+  
+.restaurant-item:hover,
+.bar-item:hover {
+  transform: translateY(-5px);
+  }
+  
+.restaurant-item img,
+.bar-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  }
+.info-box {
+  padding: 20px;
+  text-align: left;
+  }
+  
+.info-box h4 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  }
+.info-box h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 12px;
+  font-weight: bold
+  }
+.info-box p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+  }
+.learn-more-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #f4a226;
+  border-radius: 25px;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 20px;
+  }
+
+  

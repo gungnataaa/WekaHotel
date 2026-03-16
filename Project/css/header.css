@@ -1,0 +1,51 @@
+/* header style */
+header {
+    background-color: rgba(255, 255, 255, 0.9); /* Warna putih dengan transparansi */
+    position: fixed; /* Agar header tetap di atas saat scroll */
+    width: 80%; /* Mengatur lebar header */
+    max-width: 1200px; /* Lebar maksimum header */
+    z-index: 1000; /* Memastikan header berada di atas elemen lainnya */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan lembut */
+    padding: 10px; /* Tambahkan padding untuk ruang di dalam header */
+    text-align: center; /* Menyelaraskan teks di tengah */
+    left: 50%; /* Memindahkan header ke tengah */
+    transform: translateX(-50%); /* Menggeser header ke kiri setengah lebar header */
+  }
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Memisahkan elemen kiri dan kanan */
+  align-items: center; /* Menyelaraskan elemen secara vertikal */
+  padding: 10px; /* Tambahkan padding jika diperlukan */
+  }
+.navbar h1 {
+  margin: 0; /* Menghilangkan margin default */
+  }
+.navbar nav {
+  display: flex; /* Menggunakan flexbox untuk menu navigasi */
+  }
+.navbar nav ul {
+  list-style: none; /* Menghilangkan bullet points */
+  padding: 0; /* Menghilangkan padding default */
+  margin: 0; /* Menghilangkan margin default */
+  display: flex; /* Menggunakan flexbox untuk item menu */
+  }
+.navbar nav ul li {
+  margin-left: 20px; /* Jarak antar item menu */
+  }
+.navbar nav ul li a {
+  text-decoration: none; /* Menghilangkan garis bawah */
+  color: #333; /* Warna teks */
+  font-weight: bold; /* Mengatur tebal huruf */
+  }
+.custom-btn{
+    background-color: #f4a226;
+    color: white;
+    text-decoration: none;
+  }
+
+  .btn-yellow{
+    background-color: #f4a226;
+    color: white;
+    text-decoration: none;
+    border: none;
+  }

@@ -1,0 +1,239 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+
+/* header style */
+header {
+    background-color: rgba(255, 255, 255, 0.9); /* Warna putih dengan transparansi */
+    position: fixed; /* Agar header tetap di atas saat scroll */
+    width: 80%; /* Mengatur lebar header */
+    max-width: 1200px; /* Lebar maksimum header */
+    z-index: 1000; /* Memastikan header berada di atas elemen lainnya */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan lembut */
+    padding: 10px; /* Tambahkan padding untuk ruang di dalam header */
+    text-align: center; /* Menyelaraskan teks di tengah */
+    left: 50%; /* Memindahkan header ke tengah */
+    transform: translateX(-50%); /* Menggeser header ke kiri setengah lebar header */
+  }
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Memisahkan elemen kiri dan kanan */
+  align-items: center; /* Menyelaraskan elemen secara vertikal */
+  padding: 10px; /* Tambahkan padding jika diperlukan */
+  }
+.navbar h1 {
+  margin: 0; /* Menghilangkan margin default */
+  }
+.navbar nav {
+  display: flex; /* Menggunakan flexbox untuk menu navigasi */
+  }
+.navbar nav ul {
+  list-style: none; /* Menghilangkan bullet points */
+  padding: 0; /* Menghilangkan padding default */
+  margin: 0; /* Menghilangkan margin default */
+  display: flex; /* Menggunakan flexbox untuk item menu */
+  }
+.navbar nav ul li {
+  margin-left: 20px; /* Jarak antar item menu */
+  }
+.navbar nav ul li a {
+  text-decoration: none; /* Menghilangkan garis bawah */
+  color: #333; /* Warna teks */
+  font-weight: bold; /* Mengatur tebal huruf */
+  }
+.user-icon {
+  width: 20px; /* Atur lebar sesuai kebutuhan */
+  height: auto; /* Tinggi otomatis untuk menjaga rasio aspek */
+  vertical-align: middle; /* Menjaga agar gambar sejajar dengan teks */
+  margin-right: 5px; /* Jarak antara gambar dan teks */
+  }
+  .main {
+    padding: 20px;
+    display: flex;
+    padding: 20px;
+    align-items: stretch;
+  }
+  
+  .booking-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fff;
+  }
+  
+  .booking-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .booking-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  /* Room card styles */
+  .room-card {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+    vertical-align: top;
+  }
+  
+  .room-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .room-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .room-card ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .room-card ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .room-card p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .booking-form {
+    background-color: #f9f9f9; /* Warna latar belakang */
+    padding: 20px; /* Ruang di dalam elemen */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan */
+    margin: 20px auto; /* Margin atas dan bawah, dan auto untuk tengah */
+    max-width: 600px; /* Lebar maksimum form */
+    width: 90%; /* Lebar form 90% dari lebar layar */
+    box-sizing: border-box; /* Memastikan padding dan border termasuk dalam lebar total */
+}
+
+.booking-form h2 {
+    font-size: 24px; /* Ukuran font untuk judul */
+    color: #333; /* Warna teks */
+    margin-bottom: 10px; /* Jarak bawah */
+}
+
+.booking-form p {
+    font-size: 16px; /* Ukuran font untuk paragraf */
+    color: #666; /* Warna teks */
+    margin-bottom: 20px; /* Jarak bawah */
+}
+
+.booking-form label {
+    display: block; /* Menampilkan label sebagai blok */
+    margin-bottom: 5px; /* Jarak bawah */
+    font-weight: bold; /* Teks tebal */
+}
+
+.booking-form input[type="text"],
+.booking-form input[type="email"],
+.booking-form input[type="tel"],
+.booking-form input[type="date"],
+.booking-form select,
+.booking-form textarea {
+    width: 100%; /* Lebar penuh */
+    padding: 10px; /* Ruang di dalam elemen */
+    margin-bottom: 15px; /* Jarak bawah */
+    border: 1px solid #ccc; /* Garis batas */
+    border-radius: 4px; /* Sudut membulat */
+    font-size: 16px; /* Ukuran font */
+    box-sizing: border-box; /* Memastikan padding dan border termasuk dalam lebar total */
+}
+
+.booking-form textarea {
+    resize: vertical; /* Memungkinkan perubahan ukuran vertikal */
+}
+
+.booking-form .btn-submit {
+    background-color: #f4a226; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    padding: 10px 15px; /* Ruang di dalam tombol */
+    border: none; /* Menghilangkan garis batas */
+    border-radius: 4px; /* Sudut membulat */
+    cursor: pointer; /* Menunjukkan bahwa tombol dapat diklik */
+    font-size: 16px; /* Ukuran font */
+    transition: background-color 0.3s; /* Transisi untuk efek hover */
+}
+
+  footer {
+    background: #222;
+    color: #fff;
+    padding: 40px 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p,
+  .footer-section a {
+    font-size: 14px;
+    color: #bbb;
+    line-height: 1.8;
+  }
+  
+  .footer-section a {
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-section a:hover {
+    color: #fff;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-section ul li a {
+    font-size: 14px;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .footer-bottom a {
+    color: #f4a226;
+    text-decoration: none;
+  }

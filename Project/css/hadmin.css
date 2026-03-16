@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffff;
+    margin: 0;
+    padding-top:56px;
+}
+.d-flex {
+    display: flex;
+}
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #343a40;
+    color: white;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.sidebar hr {
+    border: 0;
+    height: 1px;
+    background-color: #495057;
+    margin: 10px 20px;
+}
+.sidebar nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+.sidebar nav a:hover {
+    background-color: #495057;
+}
+.sidebar .ps-4 a {
+    padding-left: 40px;
+}
+.flex-grow-1 {
+    flex-grow: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.alert {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.dashboard-cards {
+    display: flex;
+    gap: 20px;
+}
+.card {
+    background-color: white;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* tambahkan properti width */
+    height: 150px; /* tambahkan properti height */
+    display: flex; /* tambahkan properti display */
+    justify-content: center; /* tambahkan properti justify-content */
+    align-items: center; /* tambahkan properti align-items */
+    flex-direction: column; /* tambahkan properti flex-direction */
+}
+.card.bg-primary {
+    background-color: #007bff;
+}
+.card.bg-info {
+    background-color: #17a2b8;
+}
+.card.bg-warning {
+    background-color: #ffc107;
+}
+.card.bg-danger {
+    background-color: #dc3545;
+}
+.card a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card a h3 {
+    font-size: 24px; /* tambahkan properti font-size */
+    margin-bottom: 10px; /* tambahkan properti margin-bottom */
+}
+
+.card a p {
+    font-size: 16px; /* tambahkan properti font-size */
+    color: #ccc; /* tambahkan properti color */
+    margin-top: 0; /* tambahkan properti margin-top */
+}
+.accordion button {
+    color: white;
+}
+.accordion-button {
+    color: white;
+    background-color: #343a40;
+    border: none;
+    box-shadow: none;
+}
+.accordion button:focus {
+    box-shadow: none; /* Remove the focus outline */
+}
+.accordion button:not(.collapsed) {
+    color: white;
+    background-color: #343a40;
+    box-shadow: none; /* Remove the box shadow when expanded */
+}
